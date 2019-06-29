@@ -1,0 +1,28 @@
+---
+- hosts: all
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - ajcarberry.packer-debian
+    - ajcarberry.role-ansible
+
+  tasks:
+    - name: Install standalone packages.
+      apt:
+        name:
+          - git
+          - wget
+          - curl
+          - vim
+          - dkms
+          - dstat
+          - dbus
+          - iftop
+          - tcpdump
+          - screen
+          - rsync
+          - ntp
+          - python-pip
+          - unzip
+        state: present

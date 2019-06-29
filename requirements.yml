@@ -1,0 +1,9 @@
+---
+
+- src: https://github.com/ajcarberry/ansible-role-packer-debian
+  version: master
+  name: ajcarberry.packer-debian
+
+- src: https://github.com/ajcarberry/ansible-role-ansible
+  version: master
+  name: ajcarberry.role-ansible
