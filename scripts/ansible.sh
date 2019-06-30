@@ -3,7 +3,8 @@
 # Install Ansible repository.
 apt -y update && apt-get -y upgrade
 apt -y install software-properties-common
-apt-add-repository 'deb http://ftp.debian.org/debian stretch-backports main contrib non-free'
+apt-add-repository 'deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main'
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 93C4A3FD7BB9C367
 
 # Install Ansible.
 apt -y update
