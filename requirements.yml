@@ -7,3 +7,7 @@
 - src: https://github.com/ajcarberry/ansible-role-ansible
   version: master
   name: ajcarberry.role-ansible
+
+- src: https://github.com/ajcarberry/ansible-role-docker
+  version: master
+  name: ajcarberry.role-docker
