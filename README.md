@@ -45,6 +45,8 @@ There's an included Vagrantfile that allows quick testing of the built Vagrant b
 
     $ vagrant up
 
+> **Note**: If Vagrant runs into any issues mounting the VirtualBox shared folders, you can try to work around this issue by install the vagrant-vbguest plugin - `vagrant plugin install vagrant-vbguest`
+
 ## License
 
 GNU GPL v3
