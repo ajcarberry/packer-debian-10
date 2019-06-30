@@ -2,9 +2,9 @@
 
 **Current Debian Version Used**: 9.9
 
-This example build configuration installs and configures Debian 9.9 x86_64 minimal using a fairly standard preseed config file, some shell scripts, and Ansible, and then generates both a Vagrant box file for VirtualBox and an AWS AMI.
+This build configuration installs and configures a Debian 9.9 x86_64 base image using a fairly standard preseed config file, some shell scripts, and Ansible, and then generates both a Vagrant box file for VirtualBox and an AWS AMI.
 
-The example can be modified to use more Ansible roles, plays, and included playbooks to fully configure (or partially) configure a box file suitable for deployment for development environments.
+This can be modified to use more Ansible roles, plays, and included playbooks to fully configure (or partially) configure a box file suitable for deployment for development environments. By default, the image created will have Ansible and Docker pre-installed
 
 ## Requirements
 
