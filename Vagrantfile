@@ -18,7 +18,10 @@ Vagrant.configure("2") do |config|
   end
 
   # Enable provisioning with Ansible
-  config.vm.provision "ansible" do |ansible|
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.become = true
+    ansible.galaxy_roles_path = "/etc/ansible/roles"
+    ansible.galaxy_command = "sudo ansible-galaxy install --role-file=%{role_file} --roles-path=%{roles_path} --force"
     ansible.galaxy_role_file = "requirements.yml"
     ansible.playbook = "ansible/main.yml"
   end
